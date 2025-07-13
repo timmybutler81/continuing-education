@@ -31,6 +31,7 @@ Each repo should include:
 - Practice: LeetCode, Exercism, HackerRank
 
 ### 📊 1.3 Math for CS
+- **Single Variable Calculus (MIT 18.01)** – [Link](https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/)
 - **Discrete Math (MIT 6.042J)** – [Link](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2005/)
 - **Linear Algebra (UT Austin via edX)** – [Link](https://www.edx.org/course/linear-algebra-foundations-to-frontiers)
 - **Probability (MIT 6.041)** – [Link](https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/)
