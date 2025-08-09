@@ -1,0 +1,24 @@
+https://leetcode.com/problems/two-sum/description/
+
+Check for the number in the map
+If the complement is there, return if not add it and move to the next number
+This works because we will get one solution
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> numbersChecked = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            int need = target - nums[i];
+
+            if (numbersChecked.containsKey(need)) {
+                return new int[] {
+                        numbersChecked.get(need), i
+                };
+            }
+
+            numbersChecked.put(nums[i], i);
+        }
+        return null;
+    }
+}
