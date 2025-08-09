@@ -1,0 +1,53 @@
+https://leetcode.com/problems/power-of-two/
+
+Brute Force:
+- Check if number is less than or equal to 0; return false
+- If number is 1 or 2; return true
+- If remainder of dividing number by 2 is not 1; return false
+- If remainder is zero, divide by 2 and repeate
+
+First attempt at code:
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        if (n <= 0) {
+            return false;
+        }
+
+        String binaryOfNumber = Integer.toBinaryString(n);
+        int countOnes = 0;
+
+        for (int i = 0; i < binaryOfNumber.length(); i++) {
+
+            if (binaryOfNumber.charAt(i) == '1') {
+                countOnes++;
+            }
+
+            if (countOnes > 1) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+Second Attempt
+- Asked for the solution to not contain loops or recursion
+- I know that bitCount will return 1 because it counts how many 1's and any power of two will have exactly one '1' 
+- This is still technically a loop because bitCount() does loop but I didn't write the loop
+
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        if (n <= 0) {
+            return false;
+        }
+
+        int count = Integer.bitCount(n);
+
+        if (count == 1) {
+            return true;
+        }
+
+        return false;
+        
+    }
+}
